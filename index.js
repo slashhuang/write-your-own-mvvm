@@ -4,7 +4,7 @@
 import $ from 'jquery';
 const reg =/@(.*)/i; //事件正则
 const musReg = /{{(.*)}}/i; //模板绑定
-class mvvm {
+class MVVM {
     constructor(config,target){
         this.target = target;
         this.config =config;
@@ -84,7 +84,6 @@ class mvvm {
         return ()=>methods[name].apply(this.config); //保证引用中的this指向config文件
     }
     render() {
-        debugger;
         this.target.empty().append(this.virtualDom.renderFunc());
     }
 };
@@ -101,4 +100,4 @@ let config = {
         }
     }
 };
-setTimeout(()=>new mvvm(config,$('#app')),0);
+setTimeout(()=>new MVVM(config,$('#app')),0);
