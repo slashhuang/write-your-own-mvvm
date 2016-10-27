@@ -7,7 +7,7 @@
     open localhost:8081/webpack-dev-server/
 ```
 
-### [主程序入口 index.js]('./index.js')
+### [主程序入口 index.js]('https://github.com/slashhuang/write-your-own-mvvm/blob/master/index.js')
 
 ### 实现的功能点
 
